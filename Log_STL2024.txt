@@ -61,3 +61,857 @@ int main(void) {
 ======================================================
 
 
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-05 화 오후 3:43:29
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+int main(void) {
+	save("Source\\main.cpp");
+	//save("Header\\save.h");
+	//save("Header\\pch.h");
+}
+
+
+======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-05 화 오후 3:49:35
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q] do not change main, make "Change" function
+void change(int&, int&);
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	int a{ 1 }, b{ 2 };
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+
+}
+
+void change(int& a,int& b){
+	int temp = b;
+	a = b;
+	b = temp;
+
+}
+======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-05 화 오후 3:50:12
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q] do not change main, make "Change" function
+void change(int&, int&);
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	int a{ 1 }, b{ 2 };
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+
+}
+
+void change(int& a,int& b){
+	int temp = a;
+	a = b;
+	b = temp;
+
+}
+======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-05 화 오후 3:50:24
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q] do not change main, make "Change" function
+void change(int&, int&);
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	int a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+
+}
+
+void change(int& a,int& b){
+	int temp = a;
+	a = b;
+	b = temp;
+
+}
+======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-05 화 오후 3:50:48
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q] do not change main, make "Change" function
+void change(int&, int&);
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	int a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+
+}
+
+void change(int& a,int& b){
+	int temp{ a };
+	a = b;
+	b = temp;
+
+}
+======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-05 화 오후 4:01:49
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	int id{};
+	operator int() { return id; }
+	
+};
+
+void change(int&, int&);
+void change(Dog&, Dog&);
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+
+}
+
+void change(int& a,int& b){
+	int temp{ a };
+	a = b;
+	b = temp;
+}
+
+void change(Dog& a, Dog& b){
+	Dog temp{ a };
+	a = b;
+	b = temp;
+
+}
+======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-05 화 오후 4:02:40
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	int id{};
+	operator int() { return id; }
+	
+};
+
+void change(int&, int&);
+void change(Dog&, Dog&);
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+
+}
+
+void change(int& a,int& b){
+	int temp{ a };
+	a = b;
+	b = temp;
+}
+
+void change(Dog& a, Dog& b){
+	Dog temp{ a };
+	a = b;
+	b = temp;
+
+}
+======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-05 화 오후 4:18:18
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+void change(int&, int&);
+void change(class Dog&,class Dog&);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+	
+};
+
+
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+
+}
+
+void change(int& a,int& b){
+	int temp{ a };
+	a = b;
+	b = temp;
+}
+
+void change(Dog& a, Dog& b){
+	Dog temp{ a };
+	a = b;
+	b = temp;
+
+}
+======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-05 화 오후 4:33:52
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+
+template <typename T>
+void change(T&, T&);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-05 화 오후 5:01:01
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+
+template <typename T>
+void change(T&, T&);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+
+	int c = 0xffffffff;
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-05 화 오후 5:04:33
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+
+template <typename T>
+void change(T&, T&);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,9999 };
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[1000]{};
+
+	for (int& num : c) num = uid(dre);
+
+	for (int num : c) std::cout << std::format("{:8}", num);
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-05 화 오후 5:08:02
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,9999 };
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[1000]{};
+
+	for (int& num : c) num = uid(dre);
+
+	for (int num : c) std::cout << std::format("{:8}", num);
+
+	std::cout << maximum(c,1000);
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max;
+
+	for (auto i = 0; i < size; ++i) {
+		if (max > intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-05 화 오후 5:08:30
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,9999 };
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[1000]{};
+
+	for (int& num : c) num = uid(dre);
+
+	for (int num : c) std::cout << std::format("{:8}", num);
+
+	std::cout << maximum(c,1000);
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max;
+
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-05 화 오후 5:08:45
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,9999 };
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[1000]{};
+
+	for (int& num : c) num = uid(dre);
+
+	for (int num : c) std::cout << std::format("{:8}", num);
+
+	std::cout << std::endl << maximum(c, 1000);
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max;
+
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-05 화 오후 5:09:06
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,9999 };
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[1000]{};
+
+	for (int& num : c) num = uid(dre);
+
+	for (int num : c) std::cout << std::format("{:8}", num);
+
+	std::cout << std::endl << maximum(c, 1000);
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ 0 };
+
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-05 화 오후 5:13:34
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,9999 };
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[10000];
+
+	for (int& num : c) num = uid(dre);
+
+	for (int num : c) std::cout << std::format("{:8}", num);
+
+	std::cout << std::endl << maximum(c, 1000);
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ 0 };
+
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-05 화 오후 5:14:15
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,9999 };
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[10000];
+
+	for (int& num : c) num = uid(dre);
+
+	for (int num : c) std::cout << std::format("{:8}", num);
+
+	std::cout << std::endl << maximum(c, 10000);
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ 0 };
+
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+

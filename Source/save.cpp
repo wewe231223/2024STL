@@ -30,7 +30,7 @@ void save(std::string_view FileName) {
 	out << "======================================================\n\n" << std::endl;
 
 	for (auto& c : v) {
-		std::cout << c;
+		std::cout << c;		
 	}
 
 
