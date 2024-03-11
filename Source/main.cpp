@@ -3,6 +3,9 @@
 
 // [Q1] Do not make change in main funtion, make "Change" function
 // [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+// [Q5] file, "intValue.txt" has numerous count of int data, print how count of data exist, and find Max number
 template <typename T>
 void change(T&, T&);
 
@@ -20,24 +23,19 @@ public:
 };
 
 std::default_random_engine dre;
-std::uniform_int_distribution uid{ 1000,9999 };
+std::uniform_int_distribution uid{ 1000,99999 };
 
-int main(void) {
-	save("Source\\main.cpp");
+int main(void){
 
-	Dog a{ 1 }, b{ 2 };
-	std::cout << a << " , " << b << std::endl;
-	change(a, b);
-	std::cout << a << " , " << b << std::endl;
+	std::array<int, 10000> newarr{};
+
+	std::ifstream in{ "intValues.txt",std::ios::app };
+
 	
-	int c[10000];
 
-	for (int& num : c) num = uid(dre);
+	std::cout << *std::max_element(std::istream_iterator<int>{in}, {}) << std::endl;
 
-	for (int num : c) std::cout << std::format("{:8}", num);
-
-	std::cout << std::endl << maximum(c, 10000);
-
+	save("Source\\main.cpp");
 }
 
 template<typename T>
@@ -49,8 +47,8 @@ void change(T& a, T& b){
 
 
 int maximum(const int* intarr,int size) {
-	int max{ 0 };
-
+	int max{ std::numeric_limits<int>::min() };
+	
 	for (auto i = 0; i < size; ++i) {
 		if (max < intarr[i]) {
 			max = intarr[i];

@@ -915,3 +915,2849 @@ int maximum(const int* intarr,int size) {
 }======================================================
 
 
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 5:37:30
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,9999 };
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+
+	for (int& num : c) num = uid(dre);
+
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, 100);
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ 0 };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 5:37:51
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+
+	for (int& num : c) num = uid(dre);
+
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, 100);
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ 0 };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 5:39:12
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+
+	for (int& num : c) num = uid(dre);
+
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, 100);
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 5:41:33
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+
+	for (int& num : c) num = uid(dre);
+
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 5:53:09
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	
+	auto pos = std::max_element(std::begin(c),std::end(c));
+	std::cout << std::endl << std::to_string(*pos);
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 5:54:06
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 5:54:34
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[10000];
+	 
+	for (int& num : c) num = uid(dre);
+
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 5:59:33
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void) {
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+
+	int* k { nullptr };
+	for (auto i = 0; i < 10000000000; ++i) {
+		k = new int [i];
+	}
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:00:11
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void) noexcept{
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+
+	int* k { nullptr };
+	for (auto i = 0; i < 10000000000; ++i) {
+		k = new int [i];
+	}
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:01:04
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void) noexcept{
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+
+	int* k { nullptr };
+	for (auto i = 0; i < 10000000000; ++i) {
+		k = new int [i];
+	}
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:06:37
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+	std::array<int, 0x7FFFFFE> newarr{};
+
+	std::cout << sizeof(newarr) << std::endl;
+
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:11:15
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	// print 
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	// Check
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+	std::array<int, 10000> newarr{};
+
+	std::cout << sizeof(newarr) << std::endl;
+
+	std::ofstream out{"intValues.txt",std::ios::app };
+	for (int& num : newarr) num = uid(dre);
+	for (const int& num : newarr) out << num;
+
+	
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:11:59
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	// print 
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	// Check
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+	std::array<int, 10000> newarr{};
+
+	std::cout << sizeof(newarr) << std::endl;
+
+	std::ofstream out{"intValues.txt",std::ios::app };
+	for (int& num : newarr) num = uid(dre);
+	for (const int& num : newarr) out << std::format("{:8}",num);
+
+	
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:15:31
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	// print 
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	// Check
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+	std::array<int, 10000> newarr{};
+
+	std::cout << sizeof(newarr) << std::endl;
+
+	std::ofstream out{"intValues.txt",std::ios::app };
+	for (int& num : newarr) num = uid(dre);
+	for (const int& num : newarr) out << std::format("{:1}",num);
+
+	
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:15:55
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	// print 
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	// Check
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+	std::array<int, 10000> newarr{};
+
+	std::cout << sizeof(newarr) << std::endl;
+
+	std::ofstream out{"intValues.txt",std::ios::app };
+	for (int& num : newarr) num = uid(dre);
+	for (const int& num : newarr) out << std::format("{:2}",num);
+
+	
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:16:14
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	// print 
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	// Check
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+	std::array<int, 10000> newarr{};
+
+	std::cout << sizeof(newarr) << std::endl;
+
+	std::ofstream out{"intValues.txt",std::ios::app };
+	for (int& num : newarr) num = uid(dre);
+	for (const int& num : newarr) out << std::format("{:9}",num);
+
+	
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:18:00
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	// print 
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	// Check
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+	std::array<int, 10000> newarr{};
+
+	std::cout << sizeof(newarr) << std::endl;
+
+	std::ofstream out{"intValues.txt",std::ios::app };
+	for (int& num : newarr) num = uid(dre);
+	for (const int& num : newarr) out << std::format("{:b}",num);
+
+	
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:21:36
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	// print 
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	// Check
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+	std::array<int, 10000> newarr{};
+
+	std::cout << sizeof(newarr) << std::endl;
+
+	std::ofstream out{"intValues.txt",std::ios::app };
+	for (int& num : newarr) num = uid(dre);
+	for (const int& num : newarr) out << std::format("{:b},{:10}",num);
+
+	
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:21:50
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	// print 
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	// Check
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+	std::array<int, 10000> newarr{};
+
+	std::cout << sizeof(newarr) << std::endl;
+
+	std::ofstream out{"intValues.txt",std::ios::app };
+	for (int& num : newarr) num = uid(dre);
+	for (const int& num : newarr) out << std::format("{:10}",num);
+
+	
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:23:09
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	// print 
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	// Check
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+	std::array<int, 10000> newarr{};
+
+	std::cout << sizeof(newarr) << std::endl;
+
+	std::ofstream out{"intValues.txt",std::ios::app };
+	for (int& num : newarr) num = uid(dre);
+	for (const int& num : newarr) std::print("{:10}",num);
+	
+	
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:23:21
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	// print 
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	// Check
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+	std::array<int, 10000> newarr{};
+
+	std::cout << sizeof(newarr) << std::endl;
+
+	std::ofstream out{"intValues.txt",std::ios::app };
+	for (int& num : newarr) num = uid(dre);
+	for (const int& num : newarr) std::print("{:100}",num);
+	
+	
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:23:32
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	// print 
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	// Check
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+	std::array<int, 10000> newarr{};
+
+	std::cout << sizeof(newarr) << std::endl;
+
+	std::ofstream out{"intValues.txt",std::ios::app };
+	for (int& num : newarr) num = uid(dre);
+	for (const int& num : newarr) std::print("{:100000000000000000000000000000000000000}",num);
+	
+	
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:23:45
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	// print 
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	// Check
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+	std::array<int, 10000> newarr{};
+
+	std::cout << sizeof(newarr) << std::endl;
+
+	std::ofstream out{"intValues.txt",std::ios::app };
+	for (int& num : newarr) num = uid(dre);
+	for (const int& num : newarr) std::print("{:100000000}",num);
+	
+	
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:24:44
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	// print 
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	// Check
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+	std::array<int, 10000> newarr{};
+
+	std::cout << sizeof(newarr) << std::endl;
+
+	std::ofstream out{"intValues.txt",std::ios::app };
+	for (int& num : newarr) num = uid(dre);
+	for (const int& num : newarr) std::print("{1000:1000}",num);
+	
+	
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:25:00
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	// print 
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	// Check
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+	std::array<int, 10000> newarr{};
+
+	std::cout << sizeof(newarr) << std::endl;
+
+	std::ofstream out{"intValues.txt",std::ios::app };
+	for (int& num : newarr) num = uid(dre);
+	for (const int& num : newarr) std::print("{1000:}",num);
+	
+	
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:25:13
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	// print 
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	// Check
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+	std::array<int, 10000> newarr{};
+
+	std::cout << sizeof(newarr) << std::endl;
+
+	std::ofstream out{"intValues.txt",std::ios::app };
+	for (int& num : newarr) num = uid(dre);
+	for (const int& num : newarr) std::print("{:100}",num);
+	
+	
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:25:54
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	// print 
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	// Check
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+	std::array<int, 10000> newarr{};
+
+	std::cout << sizeof(newarr) << std::endl;
+
+	std::ofstream out{"intValues.txt",std::ios::app };
+	for (int& num : newarr) num = uid(dre);
+	for (const int& num : newarr) std::print("{:5}",num);
+	
+	
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:26:12
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+	save("Source\\main.cpp");
+
+	Dog a{ 1 }, b{ 2 };
+	std::cout << a << " , " << b << std::endl;
+	change(a, b);
+	std::cout << a << " , " << b << std::endl;
+	
+	int c[100];
+	 
+	for (int& num : c) num = uid(dre);
+
+	// print 
+	for (int num : c) std::print("{:8}", num);
+	
+	std::cout << std::endl << maximum(c, _countof(c));
+
+	// Check
+	std::cout << std::endl << *std::max_element(std::begin(c),std::end(c));
+
+	std::array<int, 10000> newarr{};
+
+	std::cout << sizeof(newarr) << std::endl;
+
+	std::ofstream out{"intValues.txt",std::ios::app };
+	for (int& num : newarr) num = uid(dre);
+	for (const int& num : newarr) std::print("{:8}",num);
+	
+	
+
+
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:28:16
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+// [Q5] file, "intValue.txt" has numerous count of int data, print how count of data exist, and find Max number
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+
+	std::array<int, 10000> newarr{};
+
+	std::cout << sizeof(newarr) << std::endl;
+
+	std::ofstream out{"intValues.txt",std::ios::app };
+	for (int& num : newarr) num = uid(dre);
+	for (const int& num : newarr) out << std::format("{:8}",num);
+	
+	
+
+
+	save("Source\\main.cpp");
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:36:12
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+// [Q5] file, "intValue.txt" has numerous count of int data, print how count of data exist, and find Max number
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+
+	std::array<int, 10000> newarr{};
+
+	std::ifstream in{ "intValues.txt",std::ios::app };
+
+	std::vector<int> vec{};
+
+	while (not in.eof()) {
+		int num{};
+		in >> num;
+		vec.push_back(num);
+	}
+
+	std::cout << *std::max_element(vec.begin(), vec.end()) << std::endl;
+	std::cout << vec.size();
+
+	save("Source\\main.cpp");
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:43:00
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+// [Q5] file, "intValue.txt" has numerous count of int data, print how count of data exist, and find Max number
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+
+	std::array<int, 10000> newarr{};
+
+	std::ifstream in{ "intValues.txt",std::ios::app };
+
+	std::vector<int> vec{};
+
+	int n{};
+	int count{};
+	while (in >> n) {
+		++count;
+	}
+
+	std::cout << count << std::endl;
+
+	
+
+	while (not in.eof()) {
+		int num{};
+		in >> num;
+		vec.push_back(num);
+	}
+
+	save("Source\\main.cpp");
+	std::cout << *std::max_element(vec.begin(), vec.end()) << std::endl;
+	std::cout << vec.size();
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:43:17
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+// [Q5] file, "intValue.txt" has numerous count of int data, print how count of data exist, and find Max number
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+
+	std::array<int, 10000> newarr{};
+
+	std::ifstream in{ "intValues.txt",std::ios::app };
+
+	std::vector<int> vec{};
+
+	
+
+	while (not in.eof()) {
+		int num{};
+		in >> num;
+		vec.push_back(num);
+	}
+
+	save("Source\\main.cpp");
+	std::cout << *std::max_element(vec.begin(), vec.end()) << std::endl;
+	std::cout << vec.size();
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:43:35
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+// [Q5] file, "intValue.txt" has numerous count of int data, print how count of data exist, and find Max number
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+
+	std::array<int, 10000> newarr{};
+
+	std::ifstream in{ "intValues.txt",std::ios::app };
+
+	std::vector<int> vec{};
+
+	
+
+	while (not in.eof()) {
+		int num{};
+		in >> num;
+		vec.push_back(num);
+	}
+
+	save("Source\\main.cpp");
+	std::cout << std::endl << *std::max_element(vec.begin(), vec.end()) << std::endl;
+	std::cout << vec.size();
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:48:11
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+// [Q5] file, "intValue.txt" has numerous count of int data, print how count of data exist, and find Max number
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+
+	std::array<int, 10000> newarr{};
+
+	std::ifstream in{ "intValues.txt",std::ios::app };
+
+	std::vector<int> vec{};
+
+	
+
+	while (not in.eof()) {
+		int num{};
+		in >> num;
+		vec.push_back(num);
+	}
+
+	std::cout << *std::max_element(std::istream_iterator<int>{in}, {}) << std::endl;
+
+	save("Source\\main.cpp");
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
+=========================Time=========================
+Source\main.cpp, Saved Time : 2024-03-11 월 오후 6:48:27
+======================================================
+
+========================Source========================
+
+#include "pch.h"
+#include "save.h"
+
+// [Q1] Do not make change in main funtion, make "Change" function
+// [Q2] Find Maximum in array c
+// [Q3] Randomly 100 number of int, find max int and print 
+// [Q4] A's data that number of 100, write this data to "intValue.txt" 
+// [Q5] file, "intValue.txt" has numerous count of int data, print how count of data exist, and find Max number
+template <typename T>
+void change(T&, T&);
+
+int maximum(const int*,int);
+
+class Dog {
+public:
+	Dog(int i) : id{ i } {};
+	Dog& operator=(const Dog& other) {
+		id = other.id;
+		return *this;
+	}
+	operator int() { return id; }
+	int id{};
+};
+
+std::default_random_engine dre;
+std::uniform_int_distribution uid{ 1000,99999 };
+
+int main(void){
+
+	std::array<int, 10000> newarr{};
+
+	std::ifstream in{ "intValues.txt",std::ios::app };
+
+	
+
+	std::cout << *std::max_element(std::istream_iterator<int>{in}, {}) << std::endl;
+
+	save("Source\\main.cpp");
+}
+
+template<typename T>
+void change(T& a, T& b){
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+
+int maximum(const int* intarr,int size) {
+	int max{ std::numeric_limits<int>::min() };
+	
+	for (auto i = 0; i < size; ++i) {
+		if (max < intarr[i]) {
+			max = intarr[i];
+		}
+	}
+
+	return max;
+}======================================================
+
+
